@@ -1,0 +1,52 @@
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ll="exa -l"
+alias la="exa -la"
+alias ~="cd ~"
+alias dotfiles='cd $DOTFILES_PATH'
+
+# Git
+alias gaa="git add -A"
+alias gc='$DOTLY_PATH/bin/dot git commit'
+alias gca="git add --all && git commit --amend --no-edit"
+alias gco="git checkout"
+alias gd='$DOTLY_PATH/bin/dot git pretty-diff'
+alias gs="git status -sb"
+alias gf="git fetch --all -p"
+alias gps="git push"
+alias gpsf="git push --force"
+alias gpl="git pull --rebase --autostash"
+alias gb="git branch"
+alias gl='$DOTLY_PATH/bin/dot git pretty-log'
+
+# Utils
+alias k='kill -9'
+alias i.='(idea $PWD &>/dev/null &)'
+alias c.='(code $PWD &>/dev/null &)'
+alias o.='open .'
+alias up='dot package update_all'
+
+# Others
+alias ping='prettyping --nolegend'
+alias htop='glances'
+alias c.='(code $PWD &>/dev/null &)'
+alias o.='(open .)'
+# alias ngrok='/opt/homebrew/bin/ngrok '
+
+# Personal
+alias cdc="cd $HOME/Code"
+alias cdw="cdc; cd work"
+alias cdh="cd $HOME"
+alias gamend='git commit --amend --no-edit'
+alias giti='git init && git commit -m “root” --allow-empty'
+alias gitck='git checkout '
+alias npmgls='npm list -g --depth=0'
+alias npmlls='npm list --depth=0'
+# alias brewold='/usr/local/bin/brew'
+# alias updatePi='~/.dotfiles/bin/.\/updatePi.sh'
+alias dk='docker'
+alias dkc='docker-compose'
+# alias npmupdate='npm outdated -g --depth=0'
